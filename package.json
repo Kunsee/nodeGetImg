@@ -1,0 +1,21 @@
+{
+  "name": "meiziimg",
+  "version": "1.0.0",
+  "description": "meizi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "img"
+  ],
+  "author": "Kun",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.5.0",
+    "cheerio": "^1.0.0-rc.2",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
+  }
+}
