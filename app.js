@@ -11,7 +11,7 @@ var mkdirp = require('mkdirp');
 function getUrls() {
     var urls = []
         , baseUrl = 'http://www.mmjpg.com/mm/';
-    for (var i = 994; i < 995; i++) {
+    for (var i = 800; i < 801; i++) {
         var tmp = baseUrl + i;
         urls.push(tmp);
         var dir = './mei/' + i;
@@ -28,7 +28,6 @@ function getUrls() {
 var urls = getUrls();
 
 async.mapLimit(urls,3,function (url, callback) {
-    console.log(callback);
     fetchUrl(url, callback);
 }, function (err, result) {
     if(err){
